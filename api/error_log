@@ -1,0 +1,1 @@
+[27-May-2016 14:38:21 Asia/Kuala_Lumpur] PHP Notice:  A session had already been started - ignoring session_start() in /home/jeremysi/public_html/fasheholic.com/_staging2/api/check_login.php on line 2

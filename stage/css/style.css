@@ -1,0 +1,409 @@
+body
+{
+    background-color:#eaf3f3 !important;
+}
+.main-body
+{
+    //width : 65%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.add-product-area
+{
+    border: 1px solid;
+    border-radius: 65px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    background-color: white;
+    margin-top :10px;
+}
+
+.plus-sign
+{
+    font-size : 40px;
+}
+
+.add-display-container
+{
+    border: 1px solid;
+    border-radius: 2px;
+    margin-top :10px;
+    background-color: white;
+    padding : 15px;
+}
+
+.plus-container
+{
+    background-color:#bac7d6;
+    padding : 30px;
+    border-radius: 3px;
+    height : 222px;
+}
+
+.round-circle-plus
+{
+    padding: 20px;
+    background-color : white;
+    text-align: center;
+    border-radius: 60px;
+    margin: 0 auto;
+    width : 100px;
+    height : 100px;
+    padding-top : 15px;
+    font-size : 50px;
+    color : #405370;
+    font-weight: bold;
+    border : 1px solid #405370;
+}
+
+.round-circle-plus-text
+{
+    color : darkblue;
+    font-size: 14px;
+}
+
+.round-circle-plus-text
+{
+    color: #405370;
+    text-align: center;
+    margin-top :10px
+}
+
+.form-control1
+{
+    display: block;
+    height: 29px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    
+    box-shadow: none;
+    border-color: #d2d6de;
+}
+
+.each-prop
+{
+    margin-top : 5px;
+}
+
+.no-padding
+{
+    padding-left: 0px !important;
+    padding-right : 0px !important;
+}
+
+.product-image-area
+{
+    background-color: grey;
+    color : white;
+    text-align: left;
+    min-height: 455px !important;
+    padding-top:200px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.pos-template
+{
+    margin-top : 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+
+.product-details
+{
+    background-color: beige;
+}
+
+.shop-logo
+{
+    background-color:gray;
+    width : 80px !important;
+    height : 80px;
+    color : white;
+    padding-top : 20px;
+    text-align: center;
+}
+
+.shop-name
+{
+    padding-top : 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.my
+{
+    padding-top : 25px;
+    font-size: 18px;
+}
+
+.product-details-each
+{
+    padding-top :10px;
+    padding-bottom : 10px;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.local-price-header
+{
+    background-color: green;
+    color : white;
+    text-align: center;
+    font-size: 12px;
+    padding : 5px;
+}
+
+.int-price-header
+{
+    background-color: blue;
+    color : white;
+    text-align: center;
+    font-size: 12px;
+    padding : 5px;
+}
+.local-price-body,.int-price-body
+{
+    text-align: center;
+    font-size: 11px;
+    padding : 5px;
+    font-weight: bold;
+}
+
+.price-container
+{
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.product-description
+{
+    height : 80px;
+}
+
+.bg-grey
+{
+    background-color: gray;
+    
+}
+
+.bg-grey a{
+    color : white !important;
+}
+
+.white-color-menu-line
+{
+    color : white;
+    background-color: gray;
+}
+
+.noo-yoo
+{
+    background-color: white;
+    padding : 10px;
+    margin-top :5px;
+    border-radius: 5px;
+}
+
+.noo-yoo-text h6{
+    text-align: justify;
+    font-weight: bold;
+}
+
+.noo-yoo-text h5
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.edit-button
+{
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.products-button-text-area
+{
+    margin-top:20px;
+    text-align: center;
+}
+
+.products-button-text-area button
+{
+    margin : 0 auto;
+    background-color: grey;
+    color : white;
+    padding : 10px 55px;
+}
+
+.product-container
+{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.product-container-each{
+    background-color: white;
+    padding: 5px !important;
+    border-radius: 5px;
+}
+.product-container-next
+{
+    padding : 1px !important;
+}
+.product-name
+{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.product-price
+{
+    color : green;
+    margin-bottom: 5px;
+}
+
+.product-button
+{
+    border-radius: 5px;
+    background-color: lightgray;
+    color : black;
+}
+
+.product-header
+{
+    background-color: white;
+    padding-top : 15px;
+    padding-bottom: 15px;
+}
+
+.country-flag
+{
+    background-color: gray;
+    color : white;
+    text-align: center;
+    display: table;
+    
+    height : 80px;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+.country-flag-inside
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.product-det
+{
+    text-align: center;
+    padding : 25px 0px;
+    
+}
+.product-spec-det
+{
+    color : red;
+}
+
+.product-local-price-area, .product-int-price-area
+{
+    border: 1px solid;
+    text-align: center;
+    
+}
+
+.product-local-price-text
+{
+   background-color: green;
+   color: white;
+   padding: 20px 5px;
+}
+
+.product-local-price-price
+{
+    color : green;
+    padding: 20px 5px;
+    
+}
+
+.product-int-price-text
+{
+   background-color: blue;
+   color: white;
+   padding: 20px 5px;
+}
+
+.product-int-price-price
+{
+    color : blue;
+    padding: 20px 5px;
+}
+
+.product-desc
+{
+    background-color: white;
+    padding-left : 30px !important;
+    padding-right: 30px !important;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    font-weight: bold;
+    border: 1px solid;
+}
+
+.sidebar-each
+{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.edit-profile-each
+{
+    margin-top : 5px;
+    text-align: center
+}
+
+.profile-body
+{
+    background-color: white;
+    
+    margin-bottom: 20px;
+}
+
+.profile-sub-body
+{
+    padding-top: 20px;
+    border-left: 1px solid;
+}
+
+.spe-button
+{
+    background-color: grey;
+    color : white;
+}
+
+@media screen and (max-width : 700px)
+{
+    .product-description{
+        height : auto !important;
+    }
+}
