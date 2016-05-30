@@ -19,7 +19,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
-      <form class="navbar-form navbar-left hidden-xs" role="search" style="position: absolute;width:100%;text-align: center;margin-left: -30px;">
+      <!--
+<form class="navbar-form navbar-left hidden-xs" role="search" style="position: absolute;width:100%;text-align: center;margin-left: -30px;">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search Brands/Products" style="border-radius: 20px;padding:0px 100px;background-color: #F8F8F8">
         </div>
@@ -31,6 +32,7 @@
         </div>
         
       </form>
+-->
       <ul class="nav navbar-nav navbar-right">
        
         <li class="dropdown">
