@@ -1,5 +1,5 @@
-var baseURL = "/_staging2/";
-var apiURL = "/_staging2/api/";
+var baseURL = "/_fasheholic/";
+var apiURL = "/_fasheholic/api/";
 
 function checkLogin() {
 	var url = apiURL + "functions/check_login/checkLogin.php";
@@ -18,7 +18,7 @@ $("#checkLogin").load("_includeMainNavi.php");
 		}
 		else
 		{
-			window.location.replace('/_staging2');
+			window.location.replace('/_fasheholic');
 		}
 	});
 }

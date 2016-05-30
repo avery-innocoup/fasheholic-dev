@@ -45,7 +45,7 @@ if($errorid == 0) {
 		$member_id = $_SESSION['member_id'];
 		
 		
-		$dir_path = $_SERVER['DOCUMENT_ROOT']."/_staging2/media/catalog/product/";
+		$dir_path = $_SERVER['DOCUMENT_ROOT']."/_fasheholic/media/catalog/product/";
 		
 		$fp = fopen($dir_path.$product_image_name, "w+") or die("Unable to open file!");
 // 		print_r(error_get_last());

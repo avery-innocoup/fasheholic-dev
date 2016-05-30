@@ -35,7 +35,7 @@ if($errorid == 0) {
 		
 		
 		if ( ($member_image_base64) && ($member_image_name) ) {
-			$dir_path = $_SERVER['DOCUMENT_ROOT']."/_staging2/media/member/logo/";
+			$dir_path = $_SERVER['DOCUMENT_ROOT']."/_fasheholic/media/member/logo/";
 			
 			$fp = fopen($dir_path.$member_image_name, "w+") or die("Unable to open file!");
 			print_r(error_get_last());

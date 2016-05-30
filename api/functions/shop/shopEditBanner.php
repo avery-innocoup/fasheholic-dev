@@ -20,7 +20,7 @@ if($errorid == 0) {
 	} else {
 		$shop_id = $_SESSION['shop_id'];
 		
-		$dir_path = $_SERVER['DOCUMENT_ROOT']."/_staging2/media/shop/banner/";
+		$dir_path = $_SERVER['DOCUMENT_ROOT']."/_fasheholic/media/shop/banner/";
 		
 		$fp = fopen($dir_path.$banner_image_name, "w+") or die("Unable to open file!");
 // 		print_r(error_get_last());

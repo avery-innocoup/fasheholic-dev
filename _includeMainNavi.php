@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/_staging2/">
+      <a class="navbar-brand" href="/_fasheholic/">
 	      <img src="assets/logo.gif" />
 <!-- 	      FASHEHOLIC -->
 	  </a>

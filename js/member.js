@@ -1,5 +1,5 @@
-var baseURL = "/_staging2/";
-var apiURL = "/_staging2/api/";
+var baseURL = "/_fasheholic/";
+var apiURL = "/_fasheholic/api/";
 var img_base64 = "";
 var filename = "";
 // var file_extension = "";
