@@ -35,7 +35,8 @@
 -->
       <ul class="nav navbar-nav navbar-right">
        
-        <li class="dropdown">
+        <!--
+<li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ><span style="border: 1px solid;padding: 5px;border-radius: 5px">FILTER</span> </a>
           <ul class="dropdown-menu">
             <li><a href="#">Category1</a></li>
@@ -53,6 +54,7 @@
             <li><a href="#">accessories</a></li>
           </ul>
         </li>
+-->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MENU </a>
           <ul class="dropdown-menu" style="background-color: gray">

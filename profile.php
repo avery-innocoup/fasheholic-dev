@@ -25,6 +25,9 @@
 	            </div>
 	        </div>
 	        <div class="col-xs-12">
+		        <?php
+			        if (!(isset($_GET["profile"]))) {
+			    ?>
 	            <div class="col-sm-3 col-xs-12">
 	                <div class="col-xs-12">
 		                <a href="edit_profile.php">
@@ -32,6 +35,9 @@
 		                </a>
 	                </div>
 	            </div>
+		        <?php
+			        }
+			    ?>
 				<!--
 	            <div class="col-sm-9 col-xs-12">
 	                <div class="col-xs-12">

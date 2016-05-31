@@ -40,7 +40,7 @@ if($errorid == 0) {
 	
 	if ($total_product) {
 		$stmt = mysqli_stmt_init($link);
-		$query = "SELECT a.product_name, a.product_desc, a.product_myr_price, a.product_usd_price, a.product_image_name, a.shop_id, b.shop_name, b.shop_country, c.member_logo_image_name 
+		$query = "SELECT a.product_name, a.product_desc, a.product_myr_price, a.product_usd_price, a.product_image_name, a.shop_id, b.shop_name, b.shop_country, c.member_id, c.member_logo_image_name 
 		FROM fash_product a, fash_shop b, fash_member c
 		WHERE a.shop_id = b.shop_id 
 		AND b.member_id = c.member_id
@@ -49,7 +49,7 @@ if($errorid == 0) {
 		if(mysqli_stmt_prepare($stmt, $query)) {
 // 			mysqli_stmt_bind_param($stmt, 'i', $product_id);
 			mysqli_stmt_execute($stmt);
-			mysqli_stmt_bind_result($stmt, $product_name, $product_desc, $product_myr_price, $product_usd_price, $product_image_name, $shop_id, $shop_name, $shop_country, $member_logo_image_name);
+			mysqli_stmt_bind_result($stmt, $product_name, $product_desc, $product_myr_price, $product_usd_price, $product_image_name, $shop_id, $shop_name, $shop_country, $member_id, $member_logo_image_name);
 			mysqli_stmt_store_result($stmt);
 			
 			$row = mysqli_stmt_num_rows($stmt);
@@ -67,7 +67,7 @@ if($errorid == 0) {
 						$product_obj .= ',';
 					}
 					
-					$product_obj .= '{"product_name": "'.$product_name.'", "product_desc": "'.$product_desc.'", "product_myr_price": "'.$product_myr_price.'", "product_usd_price": "'.$product_usd_price.'", "product_image_name": "'.$product_image_name.'", "shop_id": "'.$shop_id.'", "shop_name": "'.$shop_name.'", "shop_country": "'.$shop_country.'", "member_logo_image_name": "'.$member_logo_image_name.'"}';
+					$product_obj .= '{"product_name": "'.$product_name.'", "product_desc": "'.$product_desc.'", "product_myr_price": "'.$product_myr_price.'", "product_usd_price": "'.$product_usd_price.'", "product_image_name": "'.$product_image_name.'", "shop_id": "'.$shop_id.'", "shop_name": "'.$shop_name.'", "shop_country": "'.$shop_country.'", "member_id": "'.$member_id.'", "member_logo_image_name": "'.$member_logo_image_name.'"}';
 				}
 				
 // 				log_traffic($link, "productGetAll", "1", $product_id);

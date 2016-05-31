@@ -3,7 +3,66 @@ var apiURL = "/_fasheholic/api/";
 
 
 
+/*
+$('.shop-name').click(function(){
+	alert($(this).id());
+// 	alert(event.target.id);
+	
+});
+*/
 
+/*
+function goToProfile(member_id) {
+	var url = apiURL + "product.php";
+	var inputObj = {
+		"action":"productGetAll"
+	};
+	
+	$.post(url, inputObj, function(data)
+	{
+		var output = $.parseJSON(data);
+		
+		if((output.status == "true") && (output.message == 'Product Get All success'))
+		{	
+			var total_product = output.data[0].total_product;
+			var product_dir = output.data[0].product_dir;
+			var logo_dir = output.data[0].logo_dir;
+			var i;
+			var prod_html = "";
+			
+			var product_name = "";
+			var product_desc = "";
+			var product_myr_price = "";
+			var product_usd_price = "";
+			var product_image_name = "";
+			var shop_id = "";
+			var shop_name = "";
+			var shop_country = "";
+			
+			for (i=0; i<total_product; ++i) {
+				product_name = output.data[0].product_obj[i].product_name;
+				product_desc = output.data[0].product_obj[i].product_desc;
+				product_myr_price = output.data[0].product_obj[i].product_myr_price;
+				product_usd_price = output.data[0].product_obj[i].product_usd_price;
+				product_image_name = output.data[0].product_obj[i].product_image_name;
+				shop_id = output.data[0].product_obj[i].shop_id;
+				shop_name = output.data[0].product_obj[i].shop_name;
+				shop_country = output.data[0].product_obj[i].shop_country;
+				member_id = output.data[0].product_obj[i].member_id;
+				member_logo_image_name = output.data[0].product_obj[i].member_logo_image_name;
+			    
+				prod_html += loadPostHtml(product_dir, product_image_name, member_id, member_logo_image_name, logo_dir, member_logo_image_name, shop_name, shop_country, product_name, product_desc, product_myr_price, product_usd_price);
+			}
+			
+			$("#fash-product-post").html(prod_html);
+		}
+		else
+		{
+			alert("Product Get All Fail");
+		}
+	});
+}
+*/
 
 function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -21,7 +80,7 @@ function getUrlParameter(sParam) {
 };
 
 
-function loadPostHtml(product_dir, product_image_name, member_logo_image_name, logo_dir, member_logo_image_name, shop_name, shop_country, product_name, product_desc, product_myr_price, product_usd_price) {
+function loadPostHtml(product_dir, product_image_name, member_id, member_logo_image_name, logo_dir, member_logo_image_name, shop_name, shop_country, product_name, product_desc, product_myr_price, product_usd_price) {
 	var prod_html = "";
 	
 	prod_html = "<div class='col-xs-12 pos-template no-padding'>";
@@ -33,14 +92,26 @@ function loadPostHtml(product_dir, product_image_name, member_logo_image_name, l
     prod_html += "<div class='col-sm-4 col-xs-12 no-padding'>";
     prod_html += "<div class='col-xs-12 no-padding shop-logo'>";
     if (member_logo_image_name) {
+		prod_html += "<a href='profile.php?profile=";
+		prod_html += member_id;
+		prod_html += "'>";
     	prod_html += "<img src='" + logo_dir + member_logo_image_name + "' class='homepage-post-shop-logo' />";
+		prod_html += "</a>";
     } else {
 	    prod_html += "SHOP LOGO";
     }
     prod_html += "</div>";
     prod_html += "</div>";
-    prod_html += "<div class='col-sm-4 col-xs-12 shop-name'>";
+    prod_html += "<div class='col-sm-4 col-xs-12 shop-name' ";
+// 	prod_html += "id='shop-";
+// 	prod_html += member_id;
+// 	prod_html += "'";
+	prod_html += ">";
+	prod_html += "<a href='profile.php?profile=";
+	prod_html += member_id;
+	prod_html += "'>";
 	prod_html += shop_name;
+	prod_html += "</a>";
 	prod_html += "</div>";
 	prod_html += "<div class='col-sm-4 col-xs-12 my'>";
 	prod_html += shop_country;
@@ -104,9 +175,10 @@ function loadAllPost() {
 				shop_id = output.data[0].product_obj[i].shop_id;
 				shop_name = output.data[0].product_obj[i].shop_name;
 				shop_country = output.data[0].product_obj[i].shop_country;
+				member_id = output.data[0].product_obj[i].member_id;
 				member_logo_image_name = output.data[0].product_obj[i].member_logo_image_name;
 			    
-				prod_html += loadPostHtml(product_dir, product_image_name, member_logo_image_name, logo_dir, member_logo_image_name, shop_name, shop_country, product_name, product_desc, product_myr_price, product_usd_price);
+				prod_html += loadPostHtml(product_dir, product_image_name, member_id, member_logo_image_name, logo_dir, member_logo_image_name, shop_name, shop_country, product_name, product_desc, product_myr_price, product_usd_price);
 			}
 			
 			$("#fash-product-post").html(prod_html);
